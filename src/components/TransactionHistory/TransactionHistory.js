@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes, { shape } from 'prop-types';
 
 const TransactionHistory = ({items}) => {
     
@@ -24,5 +24,8 @@ const TransactionHistory = ({items}) => {
     </table>
   );
 }
+TransactionHistory.propTypes={
+ items: PropTypes.arrayOf(shape), 
+};
 
 export default TransactionHistory;

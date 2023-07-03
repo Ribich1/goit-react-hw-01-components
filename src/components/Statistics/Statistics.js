@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import css from 'components/Statistics/Statics.module.css';
 
 function Statistics({ stats, title }) {
   return (
-    <section className="statistics">
+    <section className={css.statistics}>
       {title && <h2 className="title">{title}</h2>}
-      <ul className="stat-list">
+      <ul className={css.stat_list}>
         {stats.map(stat => (
           <li key={stat.id} className="stat">
             <span className="label">{stat.label} </span>

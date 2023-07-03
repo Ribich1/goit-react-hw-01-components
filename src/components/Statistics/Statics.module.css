@@ -1,0 +1,10 @@
+.statistics {
+    display:block;
+    border: 4px dashed red;
+    width: 550px;
+}
+.stat_list{
+    list-style: none;
+  
+
+}
