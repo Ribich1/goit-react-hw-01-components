@@ -7,7 +7,6 @@ import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 import transactions from '../data/transactions.json';
 
-
 export const App = () => {
   return (
     <div
@@ -18,9 +17,11 @@ export const App = () => {
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
+        flexDirection: 'column',
+        gap:'50px',
       }}
     >
-      <Profile
+      <Profile 
         username={user.username} 
         tag={user.tag}
         location={user.location}
@@ -28,9 +29,10 @@ export const App = () => {
         stats={user.stats}
       /> 
       
-      <Statistics title="Upload stats" stats={data}/>
+      <Statistics 
+       title="Upload stats" stats={data}/>
       <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />
+      {/* <TransactionHistory items={transactions} /> */}
 
 
 
