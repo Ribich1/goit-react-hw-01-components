@@ -1,0 +1,16 @@
+.transactionHistory{
+text-align: center;
+background-color: white;
+width: 700px;
+}
+
+.head{
+    background-color: teal;
+    
+}
+table th,table td{
+    border: 1px solid #2a2a2a;
+}
+.row:nth-child(2n){
+    background-color: rgb(204, 204, 204);
+}
