@@ -9,8 +9,8 @@ return (  <li className={css.item} >
   </li>);
 };
 FriendListItem.propTypes = {    
-  isOnline: PropTypes.bool,
-  avatar: PropTypes.string,
-  name: PropTypes.string,
+  isOnline: PropTypes.bool.isRequired,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 export default FriendListItem;

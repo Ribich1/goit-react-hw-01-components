@@ -29,14 +29,14 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
   );
 };
 Profile.propTypes = {
-  avatar: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  username: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
   stats: PropTypes.shape({
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
-  }),
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
 };
 export default Profile;
