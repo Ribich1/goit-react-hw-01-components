@@ -24,3 +24,4 @@ FriendList.propTypes={
 };
 
 export default FriendList;
+console.log(object);
