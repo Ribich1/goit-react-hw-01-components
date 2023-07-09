@@ -1,4 +1,4 @@
-import PropTypes, { shape } from 'prop-types';
+import PropTypes from 'prop-types';
 import css from 'components/TransactionHistory/TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => {
